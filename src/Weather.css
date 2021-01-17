@@ -1,0 +1,44 @@
+.Weather {
+  border: 3px solid rgb(247, 223, 89);
+  border-radius: 45px;
+  padding: 18px;
+  margin: 30px auto;
+  background-color: #383535;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.Weather h1 {
+  color: white;
+  display: block;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 29px;
+  margin-left: 20px;
+  padding: 12px;
+}
+
+.form-control {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.Wather ul {
+  margin: 0%;
+  padding: 0%;
+}
+.Weather li {
+  display: block;
+  text-decoration-style: none;
+  list-style: none;
+  font-size: 16px;
+  margin: 0%;
+  padding: 0%;
+}

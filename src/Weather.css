@@ -1,15 +1,15 @@
 .Weather {
-  border: 3px solid rgb(247, 223, 89);
-  border-radius: 45px;
+  border: 2px solid rgb(197, 29, 113);
+  border-radius: 70px;
   padding: 18px;
   margin: 30px auto;
-  background-color: #383535;
-  color: white;
+  background-color: white;
+  color: rgb(48, 33, 33);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .Weather h1 {
-  color: white;
+  color: rgb(48, 33, 33);
   display: block;
   font-size: 36px;
   font-weight: 200;
@@ -30,8 +30,8 @@
   margin-left: 20px;
 }
 
-.Wather ul {
-  margin: 0%;
+.Weather ul {
+  margin-left: 20px;
   padding: 0%;
 }
 .Weather li {
@@ -39,6 +39,29 @@
   text-decoration-style: none;
   list-style: none;
   font-size: 16px;
-  margin: 0%;
+  margin-left: 20px;
   padding: 0%;
+}
+
+.Weather img {
+  height: 70px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(48, 33, 33);
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 200;
+}
+
+.Weather .unit {
+  color: rgb(48, 33, 33);
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  line-height: 3;
 }

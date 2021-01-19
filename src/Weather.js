@@ -23,11 +23,15 @@ export default function Weather() {
         </ul>
         <div className="row"> 
         <div className="col-7">
+            <div className="clearfix"> 
             <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
-            alt="Mostly sunny" className="weather-icon"
+            alt="Mostly sunny" className="float-left"
             />
+            <div className="float-left">
             <span className="temperature">5</span> 
             <span className="units">°C</span>
+            </div>
+            </div>
         </div>
         <div className="col-6">
             <ul>

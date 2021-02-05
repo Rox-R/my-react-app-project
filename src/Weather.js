@@ -1,8 +1,17 @@
-import React from "react"; 
+import React, {useState} from "react"; 
+import axios from "axios"; 
 import "./Weather.css"; 
 
 export default function Weather() {
-    return (
+    const [ready, setReady] = useState(false); 
+    const [temperature, setTemperature] = useState(null); 
+    function handleResponse(response) {
+        console.log(response.data); 
+        setTemperature(response.data.main.temp); 
+    }
+
+    if(ready) {
+        return (
         
         <div className="Weather"> 
         <form> 
@@ -28,7 +37,7 @@ export default function Weather() {
             alt="Mostly sunny" className="float-left"
             />
             <div className="float-left">
-            <span className="temperature">5</span> 
+            <span className="temperature">{temperature}</span> 
             <span className="units">°C</span>
             </div>
             </div>
@@ -42,6 +51,15 @@ export default function Weather() {
         </div>
         </div>
         
-        </div>
-    );
+        </div>  );
+} 
+    else {
+    const apiKey ="0bf2af3afb601d2b8a70e6d9dfa46409"; 
+    let city ="Amsterdam"; 
+    let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiURL).then(handleResponse); 
+
+    return "Loading..."; 
 }
+    
+    }

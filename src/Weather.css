@@ -61,7 +61,6 @@
   color: rgb(48, 33, 33);
   font-size: 15px;
   position: relative;
-  margin-bottom: 50px;
-  margin-left: 5px;
-  line-height: 3;
+
+  line-height: 50px;
 }

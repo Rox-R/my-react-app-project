@@ -1,24 +1,27 @@
 .App {
-  border: 2px solid rgb(221, 194, 40);
-  border-radius: 70px;
+  border: 3px solid rgb(221, 194, 40);
+  border-radius: 60px;
   padding: 18px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  display: block;
-  font-size: 30px;
-  font-weight: 200;
-  line-height: 29px;
-  margin: 0 auto;
+  display: flex;
+  margin: 20 auto;
   color: rgb(48, 33, 33);
-  max-width: 700px;
+  max-width: 1000px;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App .h1 {
-  margin-left: 20px;
+.h2 {
+  color: #302121;
+  display: block;
+  font-size: 15px;
+  text-align: center;
 }
 
 .footer {
   color: rgb(48, 33, 33);
-  font-size: 12px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
 }
